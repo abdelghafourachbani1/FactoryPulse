@@ -49,18 +49,18 @@ useEffect(() => {
     );
   }
   return (
-    <>
+    <div className="mx-auto max-w-6xl px-4 py-6">
       <BrowserRouter>
         <Navbar/>
       <div className='maincontainer'>
         <Routes>
-          <Route path="/" element={<Dashboard machines={machines} />} />
+          <Route path="/" element={<Dashboard machines={machines} />} />          
           <Route path="/machines" element={<MachineList machines={machines} setMachines={setMachines} />} />
           <Route path="/machines/new" element={<AddMachine machines={machines} setMachines={setMachines} />} />
         </Routes>
       </div>
       </BrowserRouter>
-    </>
+    </div>
   )
 }
 
