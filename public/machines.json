@@ -55,11 +55,5 @@
     "status": "En fonctionnement",
     "dailyProduction": 460
   }
-    {
-    "id": "M-008",
-    "name": "Ligne de conditionnement",
-    "zone": "Atelier D",
-    "status": "En fonctionnement",
-    "dailyProduction": 460
-  }
+  
 ]
