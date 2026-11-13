@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Dashboard({ machines }) {
   const totalMachines = machines.length;
   const workingMachines = machines.filter((m) => m.statut === 'En fonctionnement').length;

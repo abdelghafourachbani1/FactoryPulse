@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 function MachineList({ machines, setMachines }) {
   const [searchTerm, setSearchTerm] = useState('');
@@ -30,11 +30,11 @@ function MachineList({ machines, setMachines }) {
   });
 
   return (
-    <div className="machine-list-page">
+    <div >
       <h2>Gestion des machines</h2>
 
       <div>
-        <input type="text" placeholder="Rechercher par nom..." value={searchTerm}onChange={(e) => setSearchTerm(e.target.value)}/>
+        <input type="text" placeholder="Rechercher par nom..." value={searchTerm} onChange={(e) => setSearchTerm(e.target.value)}/>
         <select value={statusFilter} onChange={(e) => setStatusFilter(e.target.value)}>
           <option value="Tous">Tous les statuts</option>
           <option value="En fonctionnement">En fonctionnement</option>
@@ -50,8 +50,8 @@ function MachineList({ machines, setMachines }) {
       {filteredMachines.length === 0 ? (
         <div>
           <p>Aucune machine ne correspond aux critères de recherche.</p>
-        </div>
-      ) : (
+        </div>) : 
+        (
         <table>
           <thead>
             <tr>

@@ -2,13 +2,13 @@ import { useState , useEffect} from 'react'
 import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
-import './App.css'
-import React from 'react'
+
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar.jsx';
 import Dashboard from './pages/Dashboard.jsx';
 import MachineList from './pages/MachineList.jsx';
 import AddMachine from './pages/AddMachine.jsx';
+
 
 function App() {
   const [machines , setMachines] = useState([]);
